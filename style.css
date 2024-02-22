@@ -51,6 +51,9 @@ ul {
 }
 .ios-notifications__item {
   position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   max-width: 400px; /* Added max-width to limit width */
   padding: 0.75rem;
@@ -64,7 +67,8 @@ ul {
 .ios-notifications__item:nth-child(2) {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -4%;
+  transform: translateX(-50%);
   z-index: -1;
   color: transparent;
   transform: translateY(0.75rem) translateZ(-3rem);
@@ -73,7 +77,8 @@ ul {
 .ios-notifications__item:nth-child(3) {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -4%;
+  transform: translateX(-50%);
   z-index: -2;
   color: transparent;
   transform: translateY(1.5rem) translateZ(-6rem);
@@ -82,7 +87,8 @@ ul {
 .ios-notifications__item:nth-child(4) {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -4%;
+  transform: translateX(-50%);
   z-index: -1;
   color: transparent;
   transform: translateY(0.75rem) translateZ(-3rem);
@@ -91,7 +97,8 @@ ul {
 .ios-notifications__item:nth-child(5) {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -4%;
+  transform: translateX(-50%);
   z-index: -2;
   color: transparent;
   transform: translateY(2.25rem) translateZ(-9rem);
@@ -101,7 +108,8 @@ ul {
 .ios-notifications__item:nth-child(6) {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -4%;
+  transform: translateX(-50%);
   z-index: -2;
   color: transparent;
   transform: translateY(1.5rem) translateZ(-6rem);
@@ -110,7 +118,8 @@ ul {
 .ios-notifications__item:nth-child(7) {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -4%;
+  transform: translateX(-50%);
   z-index: -2;
   color: transparent;
   transform: translateY(1.5rem) translateZ(-6rem);
@@ -119,11 +128,32 @@ ul {
 .ios-notifications__item:nth-child(8) {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -4%;
+  transform: translateX(-50%);
   z-index: -2;
   color: transparent;
   transform: translateY(1.5rem) translateZ(-6rem);
   background: rgba(255, 255, 255, 0.5);
+}
+.ios-notifications__item:nth-child(9) {
+  position: absolute;
+  top: 0;
+  left: -4%;
+  transform: translateX(-50%);
+  z-index: -2;
+  color: transparent;
+  transform: translateY(1.5rem) translateZ(-6rem);
+  background: rgba(255, 255, 255, 0.5);
+}
+.ios-notifications__item:nth-child(10) {
+  position: absolute;
+  top: 0;
+  left: -4%;
+  transform: translateX(-50%);
+  z-index: -1;
+  color: transparent;
+  transform: translateY(0.75rem) translateZ(-3rem);
+  background: rgba(255, 255, 255, 0.6);
 }
 .ios-notifications.unfolded .ios-notifications__item {
   color: black;
@@ -152,6 +182,12 @@ ul {
 }
 .ios-notifications.unfolded .ios-notifications__item:nth-child(8) {
   transform: translateY(calc(700% + 3.5rem));
+}
+.ios-notifications.unfolded .ios-notifications__item:nth-child(9) {
+  transform: translateY(calc(800% + 4rem));
+}
+.ios-notifications.unfolded .ios-notifications__item:nth-child(10) {
+  transform: translateY(calc(900% + 4.5rem));
 }
 .container {
   position: relative;
